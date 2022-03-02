@@ -193,7 +193,7 @@ function start() { // Inicio da função start()
             $("#inimigo1").css("left",694);
             $("#inimigo1").css("top",posicaoY);
             energiaAtual--;
-            reposicionaInimigo1()
+        
         }
 
         // jogador com o inimigo2 
@@ -221,7 +221,7 @@ function start() { // Inicio da função start()
             $("#inimigo1").css("top",posicaoY); 
             pontos=pontos+100;   
             velocidade=velocidade+0.3; 
-            reposicionaInimigo1();       
+              
         }
 
         // Disparo com o inimigo2
@@ -322,21 +322,6 @@ function start() { // Inicio da função start()
                 }
             }	
     }
-
-
-    function reposicionaInimigo1() {
-	
-        var tempoColisao1=window.setInterval(reposiciona1, 5000);
-            
-            function reposiciona1() {
-            window.clearInterval(tempoColisao1);
-            tempoColisao4=null;
-                if (fimdejogo==false) {
-                    $("#fundoGame").append("<div id=inimigo1></div");
-                }
-            }	
-    }
-    
     
     //Reposiciona Amigo
 	
